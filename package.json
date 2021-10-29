@@ -1,0 +1,40 @@
+{
+  "name": "alkemy-node-challenge",
+  "version": "1.0.0",
+  "description": "API para explorar el mundo de Disney, conocer y modificar los personajes que lo componen, y en qué películas estos participaron. NodeJS + Express + Sequelize. Modelado de datos. Autenticación de usuarios. Listado, CRUD, detalles y búsqueda de personajes. Listado, CRUD, detalles y búsqueda de películas / series. Envíos de mail. Documentación. Test.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "alkemy-node-challenge"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Sequelize",
+    "Postman",
+    "TablePlus",
+    "Data Modeling",
+    "User Autentication",
+    "Token",
+    "CRUD",
+    "Search",
+    "Filter"
+  ],
+  "author": "Andrea Maccan",
+  "license": "ISC",
+  "dependencies": {
+    "cryptr": "6.0.2",
+    "dotenv": "10.0.0",
+    "express": "4.17.1",
+    "jsonwebtoken": "8.5.1",
+    "mysql2": "2.3.2",
+    "sequelize": "6.7.0",
+    "sequelize-cli": "6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.14"
+  }
+}

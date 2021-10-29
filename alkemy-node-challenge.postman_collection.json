@@ -1,0 +1,423 @@
+{
+	"info": {
+		"_postman_id": "e0b08ca9-e053-45f9-9e49-9b822fc54ae8",
+		"name": "alkemy-node-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Characters List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/characters?name=Mickey Mouse&weight=10&age=92",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"characters"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mickey Mouse"
+						},
+						{
+							"key": "weight",
+							"value": "10"
+						},
+						{
+							"key": "age",
+							"value": "92"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Character Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/characters/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"characters",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Character Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image\": \"https://www.fantasia.com/Mickey-Mouse.jpg\",\r\n    \"name\": \"Mickey Mouse\",\r\n    \"age\": 92,\r\n    \"weight\": 10,\r\n    \"story\": \"In 1925, Hugh Harman drew some sketches of mice around a photograph of Walt Disney. These inspired Ub Iwerks to create a new mouse character for Disney. 'Mortimer Mouse' had been Disney's original name for the character before his wife, Lillian, convinced him to change it, and ultimately Mickey Mouse came to be\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/characters",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Character Edit",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image\": \"https://www.tired-trouble.com/Donald-Duck.png\",\r\n    \"name\": \"Donald Duck\",\r\n    \"age\": 87,\r\n    \"weight\": 20,\r\n    \"story\": \"In 1937, an Italian publisher named Mondadori created the first Donald Duck story intended specifically for comic books\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/characters/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"characters",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Character Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/characters/15",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"characters",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movies List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/movies?order=ASC&name=Fantasia&genre=Animation",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"movies"
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "ASC"
+						},
+						{
+							"key": "name",
+							"value": "Fantasia"
+						},
+						{
+							"key": "genre",
+							"value": "Animation"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/movies/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image\": \"https://www.fantasia.com/fantasia.jpg\",\r\n    \"title\": \"Fantasia\",\r\n    \"creation\": 1925,\r\n    \"rating\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/movies",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie Edit",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image\": \"https://www.disney-fantasia.com/fantasia.jpg\",\r\n    \"title\": \"Fantasia\",\r\n    \"creation\": \"1925\",\r\n    \"rating\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/movies/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/movies/11",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"movies",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mail\": \"test1@gmail.com\",\r\n    \"pass\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/auth/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mail\": \"test1@gmail.com\",\r\n    \"pass\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/auth/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjM1MzYwNzU3fQ.-WufL-FLKp3V6o4-oYdGH-mVRLd7Mww84jXR2og96Ao",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/users/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

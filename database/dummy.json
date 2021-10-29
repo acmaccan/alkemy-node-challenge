@@ -1,0 +1,52 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "user": "test1@test.com",
+            "pass": "123456"
+        }
+    ],
+    "characters": [
+        {
+            "id": 1,
+            "image": "https://es.wikipedia.org/wiki/Mickey_Mouse#/media/Archivo:Walt_Disney_with_film_roll_and_Mickey_Mouse_on_his_right_arm,_year_1935.jpg",
+            "name": "Mickey Mouse",
+            "age": 92,
+            "weight": 10,
+            "story": "In 1925, Hugh Harman drew some sketches of mice around a photograph of Walt Disney. These inspired Ub Iwerks to create a new mouse character for Disney. 'Mortimer Mouse' had been Disney's original name for the character before his wife, Lillian, convinced him to change it, and ultimately Mickey Mouse came to be",
+            "movies": ["Steamboat Willie", "Plane Crazy", "Fantasia", "Bongo"]
+        },
+        {
+            "id": 2,
+            "image": "https://es.wikipedia.org/wiki/Pato_Donald#/media/Archivo:531st_Bombardment_Squadron_Emblem.png",
+            "name": "Donald Duck",
+            "age": 87,
+            "weight": 20,
+            "story": "In 1937, an Italian publisher named Mondadori created the first Donald Duck story intended specifically for comic books",
+            "movies": ["The new neightbor", "Early to bed", "Tire trouble"]
+        }
+    ],
+    "movies": [
+        {
+            "id": 1,
+            "image": "https://static.wikia.nocookie.net/disneyypixar/images/6/6b/Fantasia_Poster_1991.jpg/revision/latest/scale-to-width-down/406?cb=20190202231350&path-prefix=es",
+            "title": "Fantasia",
+            "creation": "1925-01-01",
+            "rating": 4,
+            "characters": "Mickey Mouse"
+        },
+        {
+            "id": 2,
+            "image": "https://static.wikia.nocookie.net/disneyypixar/images/6/62/Early_to_Bed.jpg/revision/latest/scale-to-width-down/320?cb=20200304010649&path-prefix=es",
+            "title": "Early to bed",
+            "creation": "1937-01-01",
+            "rating": 2,
+            "characters": "Donald Duck"
+        }
+    ],
+    "genre": [{
+        "id": 1,
+        "name": "Animation",
+        "movies": ["Steamboat Willie", "Plane Crazy", "Fantasia", "Bongo", "The new neightbor", "Early to bed", "Tire trouble"]
+    }]
+}
